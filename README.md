@@ -16,7 +16,7 @@ A live map of the TDI-Brooks research vessels (RV Nautilus, RV Gyre, RV Proteus,
    - Public matters. Scheduled Actions are free and unlimited on public repos. On a private repo this schedule would use up the 2,000 free monthly minutes in a few days.
 3. **Add the key as a secret.** Repository → Settings → Secrets and variables → Actions → New repository secret. Name: `AISSTREAM_API_KEY`. Value: your key.
 4. **Turn on Pages.** Repository → Settings → Pages → Build and deployment → Source: **GitHub Actions**.
-5. **Run it once.** Actions tab → "Update vessel positions" → Run workflow. When it finishes, the site is live at `https://<your-account>.github.io/fleet-tracker/`.
+5. **Run it once.** Actions tab → "Update vessel positions" → Run workflow. When it finishes, the site is live at `https://broussardbrandt.github.io/FleetTracker/`.
 
 After that it updates on its own. If GitHub is busy, scheduled runs can start a few minutes late.
 
@@ -25,11 +25,15 @@ After that it updates on its own. If GitHub is busy, scheduled runs can start a 
 Add a Custom HTML block to the WordPress page and paste:
 
 ```html
-<iframe src="https://<your-account>.github.io/fleet-tracker/#embed"
-        title="TDI-Brooks fleet positions"
-        style="width:100%;height:560px;border:0;border-radius:6px"
-        loading="lazy"></iframe>
+<div style="position:relative;width:100%;height:clamp(380px,60vw,640px);border-radius:6px;overflow:hidden">
+  <iframe src="https://broussardbrandt.github.io/FleetTracker/#embed"
+          title="TDI-Brooks fleet positions"
+          style="position:absolute;inset:0;width:100%;height:100%;border:0"
+          loading="lazy"></iframe>
+</div>
 ```
+
+The height scales with screen width: 640px on a desktop, about 380px on a phone.
 
 `#embed` shows the map on its own, without the header and vessel list, and needs Ctrl + scroll to zoom so it doesn't hijack scrolling on the website. Leave `#embed` off to embed the full page with the vessel list.
 
