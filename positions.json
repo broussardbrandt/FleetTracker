@@ -1,0 +1,60 @@
+{
+  "updated": "2026-09-29T15:40:00Z",
+  "vessels": {
+    "gyre": {
+      "lat": 7,
+      "lon": -12,
+      "sog": 3.5,
+      "cog": null,
+      "status": "Under way",
+      "area": "West Africa, off Sierra Leone",
+      "dest": "Banjul, Gambia",
+      "fixTime": "2026-09-06T12:00:00Z",
+      "approx": true,
+      "note": "Approximate position; no public AIS fix since early September."
+    },
+    "nautilus": {
+      "lat": -6,
+      "lon": 12,
+      "sog": 4.2,
+      "cog": null,
+      "status": "Restricted manoeuvrability",
+      "area": "Offshore Angola, off Soyo",
+      "dest": "Angola Offshore",
+      "fixTime": "2026-09-29T06:30:00Z",
+      "approx": true,
+      "note": "Approximate position (whole-degree fix from public feed)."
+    },
+    "brooks-mccall": {
+      "lat": 28.94758,
+      "lon": -95.32882,
+      "sog": 0,
+      "cog": 263,
+      "status": "Moored",
+      "dest": "",
+      "fixTime": "2026-09-28T01:16:00Z",
+      "approx": false
+    },
+    "miss-emma-mccall": {
+      "lat": 16.33723,
+      "lon": -86.47782,
+      "sog": 0,
+      "cog": 254,
+      "status": "Moored",
+      "dest": "",
+      "fixTime": "2026-09-22T21:12:00Z",
+      "approx": false,
+      "note": "Now transmitting on Vanuatu MMSI 577759000; old US MMSI 338100000 is on another vessel."
+    },
+    "proteus": {
+      "lat": 28.15354,
+      "lon": -15.40742,
+      "sog": 0,
+      "cog": 179,
+      "status": "Moored",
+      "dest": "Las Palmas",
+      "fixTime": "2026-09-29T15:31:00Z",
+      "approx": false
+    }
+  }
+}

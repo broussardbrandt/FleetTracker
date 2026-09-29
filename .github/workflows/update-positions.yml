@@ -1,0 +1,73 @@
+name: Update vessel positions
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes (GitHub may delay scheduled runs at busy times)
+  workflow_dispatch:          # run it by hand from the Actions tab
+  push:
+    branches: [main]          # redeploy the site when you edit the page
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-positions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        if: github.event_name != 'push'
+        with:
+          python-version: "3.12"
+
+      - name: Listen for AIS fixes
+        if: github.event_name != 'push'
+        env:
+          AISSTREAM_API_KEY: ${{ secrets.AISSTREAM_API_KEY }}
+          LISTEN_SECONDS: "240"
+        run: |
+          pip install websockets==13.1
+          python scripts/update_positions.py
+
+      - name: Commit new positions
+        if: github.event_name != 'push'
+        run: |
+          if git diff --quiet -- positions.json; then
+            echo "No change to commit"
+            exit 0
+          fi
+          git config user.name  "fleet-tracker-bot"
+          git config user.email "fleet-tracker-bot@users.noreply.github.com"
+          git add positions.json
+          git commit -m "Update vessel positions"
+          for i in 1 2 3; do
+            git pull --rebase --quiet && git push && break
+            sleep 5
+          done
+
+      - name: Package site
+        run: |
+          mkdir -p _site
+          cp -r index.html positions.json img _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
