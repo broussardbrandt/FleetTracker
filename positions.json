@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T15:40:00Z",
+  "updated": "2026-10-01T13:59:05Z",
   "vessels": {
     "gyre": {
       "lat": 7,
@@ -26,14 +26,13 @@
       "note": "Approximate position (whole-degree fix from public feed)."
     },
     "brooks-mccall": {
-      "lat": 28.94758,
-      "lon": -95.32882,
+      "lat": 28.94763,
+      "lon": -95.32877,
       "sog": 0,
-      "cog": 263,
+      "cog": 3.6,
       "status": "Moored",
-      "dest": "",
-      "fixTime": "2026-09-28T01:16:00Z",
-      "approx": false
+      "fixTime": "2026-10-01T13:58:11Z",
+      "dest": "USFPO"
     },
     "miss-emma-mccall": {
       "lat": 16.33723,
