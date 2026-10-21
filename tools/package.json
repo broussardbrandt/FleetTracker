@@ -1,0 +1,13 @@
+{
+  "name": "fleet-tracker-tools",
+  "private": true,
+  "type": "module",
+  "description": "Build-time tools. Not needed to run or deploy the site.",
+  "scripts": {
+    "shrink-map": "node shrink-map.mjs"
+  },
+  "devDependencies": {
+    "topojson-client": "^3.1.0",
+    "topojson-simplify": "^3.0.3"
+  }
+}

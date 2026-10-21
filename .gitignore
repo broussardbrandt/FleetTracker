@@ -1,0 +1,17 @@
+# Dependencies (only tools/ has any; the site itself has no build step)
+node_modules/
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Logs and local env
+*.log
+npm-debug.log*
+.env
+.env.*
