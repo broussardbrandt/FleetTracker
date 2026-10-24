@@ -1,17 +1,14 @@
 {
-  "updated": "2026-10-16T21:41:16Z",
+  "updated": "2026-10-24T18:46:07Z",
   "vessels": {
     "gyre": {
-      "lat": 7,
-      "lon": -12,
-      "sog": 3.5,
-      "cog": null,
-      "status": "Under way",
-      "area": "West Africa, off Sierra Leone",
-      "dest": "Banjul, Gambia",
-      "fixTime": "2026-09-06T12:00:00Z",
-      "approx": true,
-      "note": "Approximate position; no public AIS fix since early September."
+      "lat": 13.44142,
+      "lon": -16.56886,
+      "sog": 3.2,
+      "cog": 64.3,
+      "status": "Moored",
+      "fixTime": "2026-10-24T18:45:49Z",
+      "dest": "Banjul, Gambia"
     },
     "nautilus": {
       "lat": -6,
