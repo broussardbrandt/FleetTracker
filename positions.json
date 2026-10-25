@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-24T18:46:07Z",
+  "updated": "2026-10-25T01:33:37Z",
   "vessels": {
     "gyre": {
-      "lat": 13.44142,
-      "lon": -16.56886,
-      "sog": 3.2,
-      "cog": 64.3,
-      "status": "Moored",
-      "fixTime": "2026-10-24T18:45:49Z",
+      "lat": 13.62366,
+      "lon": -17.11532,
+      "sog": 6.1,
+      "cog": 276.1,
+      "status": "Under way using engine",
+      "fixTime": "2026-10-25T01:32:09Z",
       "dest": "Banjul, Gambia"
     },
     "nautilus": {
