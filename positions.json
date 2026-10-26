@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-26T01:49:32Z",
+  "updated": "2026-10-26T07:09:59Z",
   "vessels": {
     "gyre": {
-      "lat": 15.40762,
-      "lon": -17.84466,
-      "sog": 6,
-      "cog": 348.9,
+      "lat": 15.97024,
+      "lon": -17.92725,
+      "sog": 6.6,
+      "cog": 351,
       "status": "Under way using engine",
-      "fixTime": "2026-10-26T01:49:12Z",
+      "fixTime": "2026-10-26T07:08:51Z",
       "dest": "BANJUL"
     },
     "nautilus": {
