@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T21:40:25Z",
+  "updated": "2026-10-31T01:07:13Z",
   "vessels": {
     "gyre": {
       "lat": 15.97024,
@@ -43,12 +43,12 @@
       "note": "Now transmitting on Vanuatu MMSI 577759000; old US MMSI 338100000 is on another vessel."
     },
     "proteus": {
-      "lat": 28.14407,
-      "lon": -15.4274,
+      "lat": 28.14406,
+      "lon": -15.42743,
       "sog": 0,
       "cog": 170.5,
       "status": "Moored",
-      "fixTime": "2026-10-30T21:39:38Z",
+      "fixTime": "2026-10-31T01:06:40Z",
       "dest": "ESLPA"
     }
   }
