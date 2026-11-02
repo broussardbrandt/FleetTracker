@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T22:30:32Z",
+  "updated": "2026-11-02T01:49:02Z",
   "vessels": {
     "gyre": {
       "lat": 28.15453,
@@ -48,7 +48,7 @@
       "sog": 0,
       "cog": 170.5,
       "status": "Moored",
-      "fixTime": "2026-10-31T13:36:37Z",
+      "fixTime": "2026-11-02T01:45:44Z",
       "dest": "ESLPA"
     }
   }
