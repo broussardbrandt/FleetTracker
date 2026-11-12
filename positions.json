@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-11T23:46:20Z",
+  "updated": "2026-11-12T04:24:24Z",
   "vessels": {
     "gyre": {
-      "lat": 28.15871,
-      "lon": -15.40773,
+      "lat": 28.1587,
+      "lon": -15.4077,
       "sog": 0,
       "cog": 359.8,
       "status": "Moored",
-      "fixTime": "2026-11-10T10:07:52Z",
+      "fixTime": "2026-11-12T04:23:08Z",
       "dest": "LAS PALMAS"
     },
     "nautilus": {
