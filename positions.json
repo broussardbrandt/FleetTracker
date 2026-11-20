@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T07:00:15Z",
+  "updated": "2026-11-20T10:40:53Z",
   "vessels": {
     "gyre": {
       "lat": 28.15873,
@@ -43,12 +43,12 @@
       "note": "Now transmitting on Vanuatu MMSI 577759000; old US MMSI 338100000 is on another vessel."
     },
     "proteus": {
-      "lat": 28.14408,
-      "lon": -15.42742,
+      "lat": 28.15266,
+      "lon": -15.40742,
       "sog": 0,
       "cog": 0,
       "status": "Moored",
-      "fixTime": "2026-11-05T10:43:41Z",
+      "fixTime": "2026-11-20T10:37:21Z",
       "dest": "CGPNR"
     }
   }
